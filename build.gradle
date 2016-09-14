@@ -45,15 +45,15 @@ dependencies {
 	compile			('org.springframework.boot:spring-boot-starter-web')
 	
 	testCompile		('org.springframework.boot:spring-boot-starter-test')
-	testCompile		('org.testcontainers:docker-compose:0.9.9')
 	testCompile 	('junit:junit:4.12')
 }
 
 sonarqube {
 	properties {
 		property 'sonar.sourceEncoding', 'UTF-8'
+		property 'sonar.projectKey', 'ICM2'
         property 'sonar.host.url', 'http://172.17.42.1:9000'
-        property 'sonar.projectName', 'IC W2'
+        property 'sonar.projectName', 'IC Microservice 2'
         property 'sonar.jacoco.reportPath', 'build/jacoco/test.exec'
 	}
 }
